@@ -23,6 +23,7 @@ h1.main-heading{ margin-bottom: 20px;font-size:30px;margin-top:10px;color:#00008
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 .content-box h2{font-size:20px;}
 .calorie-count li{min-height:70px; min-width:40px;}
+.content-box .odometer{font-size:45px;}
 .suggestions-container{margin-top:50px;}
 }
 .odometer{font-size: 65px;}
