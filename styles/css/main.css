@@ -18,7 +18,7 @@ body{font-family: "Myriad Pro", Verdana, Calibri, sans-serif;color:#777}
 .main-wrapper .form-field{font-size:20px;font-weight:normal;padding:7px; background:#F3F2F2;display:block;margin-bottom:11px;}
 .height-container select.form-control{margin-bottom:10px;}
 footer{margin-top:50px; text-align:center;}
-h1.main-heading{ margin-bottom: 20px;font-size:30px;margin-top:10px;color:#00008B;text-shadow: 1px 1px 0px rgba(0,0,0,0.2);}
+h1.main-heading{ margin-bottom: 20px;font-size:30px;margin-top:10px;color:#00008B;	text-shadow: 5px 5px 5px #ccc;}
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 .content-box h2{font-size:20px;}
