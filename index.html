@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+	<title>Hackathon Test</title>
+	<link rel="stylesheet" type="text/css" href="styles/css/jquery-ui.min.css">
+	<link rel="stylesheet" type="text/css" href="styles/css/main.css">
+</head>
+<body>
+Age: <input type="number" id="age"/><br/><br/>
+Gender: <select id="gender"><option value="m">Male</option><option value="f">Female</option></select><br/><br/>
+Weight(in Pounds): <input type="number" id="weight"/><br/><br/>
+Height(in Inches): <input type="number" id="height"/><br/><br/>
+Activity Level: <select id="activity">
+<option value="1.2">Sedentary</option>
+<option value="1.3">Lightly Active</option>
+<option value="1.4">Moderately Active</option>
+<option value="1.5">Very Active</option>
+<option value="1.6">Extra Active</option>
+</select><br/><br/><p id="msg"></p>
+<input type="button" id="calcBMI" value="Calculate"/><br/><br/><br/><br/>
+<div id="dailyPage">
+	<p id="calorieNeeds">Calore remaining: <span>0</span></p>
+	<p id="calorieConsumed">Calore consumed: <span>0</span></p>
+	Item: <input type="text" id="meal"/>
+
+	<ul id="itemList">
+	</ul>
+</div>
+<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
