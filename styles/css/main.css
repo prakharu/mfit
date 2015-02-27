@@ -1,3 +1,12 @@
+
+@font-face {
+  font-family: 'OpenSans-Light';
+
+  src: url('../fonts/OpenSans-Light.eot');
+  src: url('../fonts/OpenSans-Light.eot?#iefix') format('embedded-opentype'), url('../fonts/OpenSans-Light.woff2') format('woff2'), url('../fonts/OpenSans-Light.woff') format('woff'), url('../fonts/OpenSans-Light.ttf') format('truetype'), url('../fonts/OpenSans-Light.svg#glyphicons_halflingsregular') format('svg');
+}
+
+
 body{font-family: "Myriad Pro", Verdana, Calibri, sans-serif;color:#777}
 .header{margin-top:20px}
 .jumbotron{margin-top:30px}
@@ -15,10 +24,28 @@ body{font-family: "Myriad Pro", Verdana, Calibri, sans-serif;color:#777}
 .calorie-count li{border-radius:8px;background:#262626;padding:10px;min-width:70px;min-height:70px;text-align:center;color:#fff;font-size:30px;margin-right:10px;list-style:none;float:left;}
 .suggestions-container h2{margin-top:0px;}
 .main-wrapper .form-group{margin-bottom:30px;}
-.main-wrapper .form-field{font-size:20px;font-weight:normal;padding:7px; background:#F3F2F2;display:block;margin-bottom:11px;border-radius: 7px;}
+.form-control{width: 75%;
+color: #000;
+float: left;
+border: 0;
+background-color: #f9f8f8;
+padding: 7px;
+margin: 0;}
+.main-wrapper .form-field{font-family: OpenSans-Light;
+font-size: 20px;
+font-weight: normal;
+display: block;
+margin-bottom: 11px;
+border-radius: 7px;
+padding-bottom: 0px;
+margin-bottom: 0px;
+background: none;
+width: 25%;
+float: left;
+}
 .height-container select.form-control{margin-bottom:10px;}
 footer{margin-top:50px; text-align:center;}
-h1.main-heading{ margin-bottom: 20px;font-size:30px;margin-top:10px;color:#00008B;	text-shadow: 5px 5px 5px #ccc;}
+h1.main-heading{ font-family: OpenSans-Light;margin-bottom: 20px;font-size:30px;margin-top:10px;color:#000;	}
 .final-result{margin-top:30px}
 .final-result .result-box{background:#910000;padding:20px;color:#fff;font-size:30px;border-radius:8px;}
 .modal-dialog .modal-footer{text-align:center}
@@ -30,3 +57,23 @@ h1.main-heading{ margin-bottom: 20px;font-size:30px;margin-top:10px;color:#00008
 .suggestions-container{margin-top:50px;}
 }
 .odometer{font-size: 65px;}
+
+.main-wrapper .form-group {
+padding: 8px;
+margin: 1px;
+
+border-bottom: 1px solid #c1c1c1;
+height: 50px;
+background-color: #f9f8f8;
+}
+
+.container {
+
+background-color: #f9f8f8;
+}
+
+.popupP{text-align: center;
+font-size: 17px;
+width: 80%;
+margin: 0 auto;
+line-height: 25px;}
