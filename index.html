@@ -29,21 +29,21 @@
 		<div class="landing-page">
 		<form>
 			  <div class="form-group age-container">
-				<label for="Age" class="form-field">Age</label>
-				<input type="number" class="form-control" id="Age" placeholder="Enter Your Age">
+				<label for="age" class="form-field">Age</label>
+				<input type="number" class="form-control" id="age" placeholder="Enter Your Age">
 			  </div>
 			  <div class="form-group sex-container">
 			    <label for="Gender" class="form-field">Gender</label>
 				<label class="radio-inline">
-				  <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Male
+				  <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="m"> Male
 				</label>
 				<label class="radio-inline">
-				  <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Female
+				  <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="f"> Female
 				</label>				
 			  </div>
 			 <div class="form-group weight-container">
 			  <label for="weight" class="form-field">Weight</label>
-			  <select class="form-control">				 
+			  <select class="form-control" id="weight">				 
 					<option value="0">0</option>
 					<option value="1">1</option>
 					<option value="2">2</option>
@@ -149,7 +149,7 @@
 			</div>
 			 <div class="form-group height-container">
 			  <label for="height" class="form-field">Height</label>
-			  <select class="form-control">				 
+			  <select class="form-control" id="heightFeet">				 
 					<option value="0">feet</option>
 					<option value="1">1</option>
 					<option value="2">2</option>
@@ -160,7 +160,7 @@
 					<option value="7">7</option>
 					<option value="8">8</option>									  
 				</select>
-				<select class="form-control">	
+				<select class="form-control" id="heightInches">	
 					<option value="inches">inches</option>
 					<option value="0">0</option>
 					<option value="1">1</option>
@@ -171,12 +171,12 @@
 					<option value="6">6</option>
 					<option value="7">7</option>
 					<option value="8">8</option>
-					<option value="7">9</option>
-					<option value="8">10</option>
-					<option value="7">11</option>										
+					<option value="9">9</option>
+					<option value="10">10</option>
+					<option value="11">11</option>										
 				</select>
 			</div>
-			<button type="button" class="btn btn-primary btn-lg btn-block">Submit</button>
+			<button type="button" class="btn btn-primary btn-lg btn-block" id="calcBMI">Submit</button>
 		</form>
 	 </div>
 	</div>
