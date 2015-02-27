@@ -15,7 +15,7 @@ body{font-family: "Myriad Pro", Verdana, Calibri, sans-serif;color:#777}
 .calorie-count li{border-radius:8px;background:#262626;padding:10px;min-width:70px;min-height:70px;text-align:center;color:#fff;font-size:30px;margin-right:10px;list-style:none;float:left;}
 .suggestions-container h2{margin-top:0px;}
 .main-wrapper .form-group{margin-bottom:30px;}
-.main-wrapper .form-field{font-size:20px;font-weight:normal;padding:7px; background:#F3F2F2;display:block;margin-bottom:11px;}
+.main-wrapper .form-field{font-size:20px;font-weight:normal;padding:7px; background:#F3F2F2;display:block;margin-bottom:11px;border-radius: 7px;}
 .height-container select.form-control{margin-bottom:10px;}
 footer{margin-top:50px; text-align:center;}
 h1.main-heading{ margin-bottom: 20px;font-size:30px;margin-top:10px;color:#00008B;	text-shadow: 5px 5px 5px #ccc;}
