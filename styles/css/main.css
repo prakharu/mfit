@@ -30,3 +30,5 @@ h1.main-heading{ margin-bottom: 20px;font-size:30px;margin-top:10px;color:#00008
 .suggestions-container{margin-top:50px;}
 }
 .odometer{font-size: 65px;}
+.page{display: none;}
+#page1{display: block;}
