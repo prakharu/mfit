@@ -1,14 +1,14 @@
+var revisedCalorieRequirement = 0;
+var calorieRemaining = 2135;
+var calorieConsumed = 0;
 $(document).ready(function(){
-	var revisedCalorieRequirement = 0;
-	var calorieRemaining = 0;
-	var calorieConsumed = 0;
 	$('#calcBMI').on('click', function(){
 		
 		/* Calorie requirement calcluation based on activity level */
 		var genderValue = $('#gender').val();
 		var age = $('#age').val();
-		var weight = $('#weight').val();
-		var height = $('#height').val();
+		var weight = $('#weight').val() * 2.20462;
+		var height = $('#heightFeet').val()*12 + $('#heightInches').val();
 		var activityLevel = $('#activity').val();
 		var calorieRequirement = 0;
 		if(genderValue === 'm'){
@@ -59,7 +59,7 @@ $(document).ready(function(){
 	});
 
 	/* Daily Page Component */	
-	$('#dailyPage #calorieNeeds span').html(calorieRemaining);
+	updateCalories();
 
 	var foodJson = new Array();
 	foodJson.push({'label':'Chapati','value':'Chapati','calorie':'50'});
@@ -75,19 +75,18 @@ $(document).ready(function(){
 
 	var $selectedFoodList = $('#dailyPage #itemList');
 
-	$("#meal").autocomplete({
+	$("#foodItem").autocomplete({
         source: foodJson,
         minLength: 1,
         select: function(event, ui) {
-            console.log(event);
-            console.log(ui);
             var $item = $('<li>');
             $item.text(ui.item.label);
             calorieRemaining = calorieRemaining - parseInt(ui.item.calorie);
             calorieConsumed = calorieConsumed + parseInt(ui.item.calorie);
-            $selectedFoodList.append($item);
-            $('#dailyPage #calorieNeeds span').html(calorieRemaining);
-            $('#dailyPage #calorieConsumed span').html(calorieConsumed);
+            //$selectedFoodList.append($item);
+            //$('#dailyPage #calorieNeeds span').html(calorieRemaining);
+            //$('#dailyPage #calorieConsumed span').html(calorieConsumed);
+            updateCalories();
         },
         open: function(event, ui) {
             
@@ -104,3 +103,21 @@ $(document).ready(function(){
     });
 
 });
+
+function digitSeperator(number){
+	var sNumber = number.toString();
+	var output = new Array();
+	for(var i=0; i < sNumber.length; i++){
+		output.push(sNumber.charAt(i));
+	}
+	return output;
+}
+
+function updateCalories(){
+	
+	/* Update remaining calorie */
+    $('#remainingCalorie').html(calorieRemaining);
+
+    /* Update total calorie */
+    $('#caloriesConsumed').html(calorieConsumed);
+}

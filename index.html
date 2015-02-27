@@ -9,6 +9,7 @@
     <!-- Bootstrap -->
     <link href="styles/css/bootstrap.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="styles/css/jquery-ui.min.css">
+  <link rel="stylesheet" type="text/css" href="styles/css/odometer-theme-car.css">
   <link href="styles/css/main.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -186,12 +187,12 @@
 			<h2>Calories Remaining</h2>
 			<div class="row">
 				<div class="col-xs-12 col-lg-8">
-					<ul class="calorie-count" id="remainingCalorie">
-						<li></li>
+					<div class="odometer" id="remainingCalorie">9999
+						<!--<li></li>
 						<li>2</li>
 						<li>3</li>
-						<li>4</li>
-					</ul>
+						<li>4</li>-->
+					</div>
 				</div>
 				<div class="col-xs-12 col-lg-4 suggestions-container">
 					<h2>suggestions:</h2>
@@ -237,6 +238,7 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.js"></script>
     <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/odometer.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
   </body>
 </html>
