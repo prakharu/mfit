@@ -8,7 +8,8 @@
 
     <!-- Bootstrap -->
     <link href="styles/css/bootstrap.css" rel="stylesheet">
-	<link href="styles/css/main.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="styles/css/jquery-ui.min.css">
+  <link href="styles/css/main.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -185,7 +186,7 @@
 			<h2>Calories Remaining</h2>
 			<div class="row">
 				<div class="col-xs-12 col-lg-8">
-					<ul class="calorie-count">
+					<ul class="calorie-count" id="remainingCalorie">
 						<li></li>
 						<li>2</li>
 						<li>3</li>
@@ -203,6 +204,7 @@
 		  </div>		  
 		</div>
 		<p><a class="btn btn-primary btn-lg btn-block" href="#" role="button">Add Food &raquo;</a></p>
+    <input type="text" id="foodItem"/>
 	</div>
     <div class="container">
       <!-- Example row of columns -->
@@ -234,5 +236,7 @@
     <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
   </body>
 </html>
