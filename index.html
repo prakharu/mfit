@@ -187,7 +187,25 @@
 			 </select>				
 			</div>
 			
-			<button type="button" class="btn btn-primary btn-lg btn-block" id="calcBMI">Submit</button>
+			<button type="button" class="btn btn-primary btn-lg btn-block" id="calcBMI" data-toggle="modal" data-target="#myModal">Submit</button>
+			<!-- Modal -->
+			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			  <div class="modal-dialog">
+				<div class="modal-content">
+				  <div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="myModalLabel">Modal title</h4>
+				  </div>
+				  <div class="modal-body">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					
+				  </div>
+				  <div class="modal-footer">
+					<button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+				  </div>
+				</div>
+			  </div>
+			</div>
 		</form>
 	 </div>
 	</div>
@@ -218,7 +236,7 @@
 		<p><a class="btn btn-primary btn-lg btn-block" href="#" role="button">Add Food &raquo;</a></p>
     
  <div class="form-group age-container">
-				<label for="Age" class="form-field">Add Your Fodd </label>
+				<label for="Age" class="form-field">Add Your Food </label>
 				<input  class="form-control" id="foodItem" placeholder="What you have eaten today">
 			  </div>
 
@@ -262,27 +280,10 @@
           </tr>
          
         </tbody>
-      </table>
-      <a href="#" class="btn btn-primary btn-bg pull-right">View and Checkout</a>
+      </table>     
     </div>
 	</div>
-    <div class="container">
-      <!-- Example row of columns -->
-       <div class="row calories-container">
-        <div class="col-md-4 column-info">
-         <h2>Callories Consumed</h2>
-         <span class="value" id="caloriesConsumed">1000</span>
-        </div>
-        <div class="col-md-4 column-info">
-          <h2>Your Weight</h2>
-          <span class="value">52.7</span>
-       </div>
-        <div class="col-md-4 column-info">
-          <h2>Active Level</h2>
-          <span class="value">Active</span>
-        </div>
-      </div>
-    </div>
+   
 	
 	<div class="content-box nutrition">
         <div class="jumbotron">

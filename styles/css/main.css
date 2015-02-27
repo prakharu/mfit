@@ -21,7 +21,7 @@ footer{margin-top:50px; text-align:center;}
 h1.main-heading{ margin-bottom: 20px;font-size:30px;margin-top:10px;color:#00008B;	text-shadow: 5px 5px 5px #ccc;}
 .final-result{margin-top:30px}
 .final-result .result-box{background:#910000;padding:20px;color:#fff;font-size:30px;border-radius:8px;}
-
+.modal-dialog .modal-footer{text-align:center}
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 .content-box h2{font-size:20px;}
