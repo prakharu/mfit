@@ -1,0 +1,24 @@
+.header{margin-top:30px}
+.jumbotron{margin-top:30px}
+.content-box .jumbotron{background:#171717;padding:20px;}
+.content-box h2, .content-box p, .content-box span, .content-box li{color:#fff;}
+.content-box h2{font-size:25px;}
+.content-box p{font-size:18px;}
+.column-info{padding:15px 10px 15px 10px;}
+.column-info:first-child{border-left:none;}
+.calories-container{margin-top:35px;border-top:solid 1px #ccc;border-bottom:solid 1px #ccc;}
+.calories-container h2{color:#777777;font-size:20px;margin-top:5px}
+.calories-container .value{font-size:20px}
+.main-wrapper .btn-primary{background-color:#f4cc66;border:solid 1px #f4cc66;color:#000;font-size:22px;}
+.calorie-count{padding:0px;margin:20px 0 0 0;}
+.calorie-count li{border-radius:8px;background:#262626;padding:10px;min-width:70px;min-height:70px;text-align:center;color:#fff;font-size:30px;margin-right:10px;list-style:none;float:left;}
+.suggestions-container h2{margin-top:0px;}
+footer{margin-top:50px; text-align:center;}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+.content-box h2{font-size:20px;}
+.calorie-count li{min-height:70px; min-width:40px;}
+.suggestions-container{margin-top:50px;}
+h1.main-heading{ padding-top: 60px;}
+.header .nav{float:left!important;}
+}
