@@ -10,6 +10,12 @@ $(document).ready(function(){
 		userProfile.initializeUserProfile(genderValue, age, height, weight, activityLevel);
 		var userMessage = 'Your calorie requirement to sustain your current weight is <b>' + userProfile.userCalorieRequirement + '</b> and your <b>BMI</b> is ' + userProfile.userBMI + '. According to your BMI you are <b>' + userProfile.userWeightCategory + '</b> and your revised calorie target for <b>' + userProfile.userWeightLossGain +'</b> should be <b>' + userProfile.userRevisedCalorieRequirement+'</b>';
 		$('#userResult .modal-body p').html(userMessage);
+		if(isNaN(userProfile.userCalorieRequirement) || isNaN(userProfile.userBMI) || isNaN(userProfile.userRevisedCalorieRequirement)){
+			alert('Error. Please fill the form correctly!');
+		}
+		else{
+			$('#userResult').modal('show');
+		}
 	});
 
 	/* On click of proceed on popup */
