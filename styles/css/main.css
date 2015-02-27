@@ -13,12 +13,15 @@
 .calorie-count{padding:0px;margin:20px 0 0 0;}
 .calorie-count li{border-radius:8px;background:#262626;padding:10px;min-width:70px;min-height:70px;text-align:center;color:#fff;font-size:30px;margin-right:10px;list-style:none;float:left;}
 .suggestions-container h2{margin-top:0px;}
+.main-wrapper .form-group{margin-bottom:30px;}
+.main-wrapper .form-field{font-size:20px;}
+.height-container select.form-control{margin-bottom:10px;}
 footer{margin-top:50px; text-align:center;}
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 .content-box h2{font-size:20px;}
 .calorie-count li{min-height:70px; min-width:40px;}
 .suggestions-container{margin-top:50px;}
-h1.main-heading{ padding-top: 60px;}
+h1.main-heading{ padding-bottom: 20px;}
 .header .nav{float:left!important;}
 }
