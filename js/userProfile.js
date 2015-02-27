@@ -61,6 +61,9 @@ var userProfile = new function(){
     this.userCalorieRemaining = this.userRevisedCalorieRequirement;
   };
   this.updateUserDetails = function(foodDetails){
-
+    this.userCalorieRemaining = this.userCalorieRemaining - parseInt(foodDetails.calorie);
+    this.userCalorieConsumed = this.userCalorieConsumed + parseInt(foodDetails.calorie);
+    console.log(this.userCalorieRemaining);
+    console.log(this.userCalorieConsumed);
   };
 };
