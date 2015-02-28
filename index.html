@@ -11,8 +11,6 @@
   <link rel="stylesheet" type="text/css" href="styles/css/jquery-ui.min.css">
   <link rel="stylesheet" type="text/css" href="styles/css/odometer-theme-car.css">
   <link href="styles/css/main.css" rel="stylesheet">
-	  	  <link type="text/css" rel="stylesheet" href="../src/css/graph.css">
-	<link type="text/css" rel="stylesheet" href="css/lines.css">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -21,39 +19,9 @@
     <![endif]-->
   </head>
   <body>
-<div id="chart_container">
-	<div id="chart"></div>
-</div>
 
-<script>
-
-var ajaxGraph = new Rickshaw.Graph.Ajax( {
-
-	element: document.getElementById("chart"),
-	width: 400,
-	height: 200,
-	renderer: 'line',
-	dataURL: 'data/data.json',
-	onData: function(d) { d[0].data[0].y = 80; return d },
-	series: [
-		{
-			name: 'New York',
-			color: '#c05020',
-		}, {
-			name: 'London',
-			color: '#30c020',
-		}, {
-			name: 'Tokyo',
-			color: '#6060c0'
-		}
-	]
-} );
-
-</script>
-
-</script>
       <div class="header">       
-        <header role="banner" id="top" class="navbar navbar-static-top bs-docs-nav">
+        <header role="banner" id="top" class="navbar navbar-static-top bs-docs-nav ">
 		  <div class="container">
 			<div class="navbar-header">
 			  <button data-target=".bs-navbar-collapse" data-toggle="collapse" type="button" class="navbar-toggle collapsed">
@@ -67,20 +35,23 @@ var ajaxGraph = new Rickshaw.Graph.Ajax( {
 			<nav class="navbar-collapse bs-navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
 			  <ul class="nav navbar-nav">
 				<li>
-				  <a href="#">My Profile</a>
+				  <a href="#" id="menu1">My Profile</a>
 				</li>
 				<li>
-				  <a href="#">Calculation </a>
+				  <a href="#" id="menu2">Calculation </a>
 				</li>
 				<li class="active">
-				  <a href="#">Suggestions</a>
+				  <a href="#" id="menu3">Suggestions</a>
 				</li>				
 			  </ul>     
 			</nav>
 		  </div>
 		</header>
-      </div>
-  <div class="container main-wrapper">
+      </div>	 
+	 <div class="date-container topmargin">
+		20 February 2015
+	  </div>
+  <div class="container main-wrapper">	
     <!-- Main jumbotron for a primary marketing message or call to action -->
 	<div id="page1" class="page">
 		<div class="landing-page">
@@ -92,7 +63,7 @@ var ajaxGraph = new Rickshaw.Graph.Ajax( {
 			  <div class="form-group gender-container">
 			    <label for="Gender" class="form-field">Gender</label>
 				<label class="radio-inline">
-				  <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="m" checked="checked"> Male
+				  <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="m"> Male
 				</label>
 				<label class="radio-inline">
 				  <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="f"> Female
@@ -291,7 +262,7 @@ var ajaxGraph = new Rickshaw.Graph.Ajax( {
 			</div>
 		  </div>		  
 		</div>
-		
+		<p><a class="btn btn-primary btn-lg btn-block" href="#" role="button">Add Food &raquo;</a></p>
     
 			<div class="form-group food-container">
 				<label for="Age" class="form-field">Add Your Food </label>
@@ -310,91 +281,53 @@ var ajaxGraph = new Rickshaw.Graph.Ajax( {
             <th>Quantity</th>
             <th>Action</th>
           </tr>
-        </thead>
-        <tbody>
-          <!--<tr>
-            <td>Sweet Chilli Burger</td>
-            <td>500C</td>
-            <td>1</td>
-                  <td><button class="btn btn-primary btn-sm btn-danger btn-block" style="width: 44%; height: 14%; line-height:0.428571;"  type="button">
-		<span aria-hidden="true" class="glyphicon glyphicon-remove"></span></button></td>
-            
-          </tr>
-          <tr>
-			<td>Sweet Chilli Burger</td>
-           <td>500C</td>
-            <td>1</td>
-                  <td><button class="btn btn-primary btn-sm btn-danger btn-block" style="width: 44%; height: 14%; line-height:0.428571;"  type="button">
-		<span aria-hidden="true" class="glyphicon glyphicon-remove"></span></button></td>
-            
-          </tr>
-             <tr>
-		<td>Sweet Chilli Burger</td>
-          <td>500C</td>
-            <td>1</td>
-                  <td><button class="btn btn-primary btn-sm btn-danger btn-block" style="width: 44%; height: 14%; line-height:0.428571;"  type="button">
-		<span aria-hidden="true" class="glyphicon glyphicon-remove"></span></button></td>
-            
-          </tr>-->
-         
-        </tbody>
+        </thead>        
       </table>     
     </div>
 	</div>
-   
-	
-	<div class="content-box nutrition">
+	<footer>
+        <p>&copy; Copyright 2015, Sapient Corporation. All rights reserved</p>
+    </footer>	
+</div>
+</div>
+
+<div class="content-box nutrition">
         <div class="jumbotron">
 		  <div class="container">			
 			<div class="row">
-				<div class="col-lg-4 col-xs-4">
-				  <h2>Carbs </h2>          
-				  <p id="carbsPercentage">23% </p>		  
+				<div class="col-lg-9 col-xs-9">
+					<div class="row">
+						<div class="col-lg-4 col-xs-4">						          
+						  <p id="carbsPercentage">23% </p>
+						  <h2>Carbs </h2>  		  
+						</div>
+						<div class="col-lg-4 col-xs-4">						  
+						  <p id="proteinPercentage">30%</p>
+						  <h2>Protein </h2>
+					    </div>
+						<div class="col-lg-4 col-xs-4">						  
+						  <p id="fatPercentage">60%</p>
+						  <h2>Fat</h2>
+						</div>
+					</div>
 				</div>
-				<div class="col-lg-4 col-xs-4">
-				  <h2>Protein </h2>
-				  <p id="proteinPercentage">30%</p>
-			   </div>
-				<div class="col-lg-4 col-xs-4">
-				  <h2>Fat</h2>
-				  <p id="fatPercentage">60%</p>
-				</div>
-			</div>
-			
-			<div class="row final-result">
-				<div class="col-lg-5 col-xs-5 pull-left result-box">
-				  <h2>RDI </h2>          
-				  <p>23% </p>				  
-				</div>
-				<div class="col-lg-5 col-xs-5 pull-right result-box">
-				  <h2>Calorie</h2>          
-				  <p>1000</p>				  
+				<div class="col-lg-3 col-xs-3 final-result">					         
+				    <p>1000</p>
+					<h2>Calorie</h2> 	
 				</div>
 			</div>
-			
 		  </div>		  
 		</div>
 	</div>
-	
-	<footer>
-        <p>&copy; Copyright 2015, Sapient Corporation. All rights reserved</p>
-    </footer>
-	
-</div>
-    </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
-	
-
-	<script src="vendor/d3.v3.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.js"></script>
     <script type="text/javascript" src="js/jquery-ui.min.js"></script>
     <script type="text/javascript" src="js/odometer.js"></script>
     <script type="text/javascript" src="js/userProfile.js"></script>
     <script type="text/javascript" src="js/data.js"></script>
-	  	  
     <script type="text/javascript" src="js/main.js"></script>
   </body>
 </html>

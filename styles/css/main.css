@@ -22,15 +22,12 @@ body{font-family: "Myriad Pro", Verdana, Calibri, sans-serif;color:#777}
 .height-container select.form-control{margin-bottom:10px;}
 footer{margin-top:50px; text-align:center;}
 h1.main-heading{ border-radius: 5px;color: #fff;font-size: 20px;margin-bottom: 20px;margin-top: 0px;padding: 17px 10px 13px 10px;}
-.final-result{margin-top:10px}
-.final-result .result-box{background:#910000;padding:10px 20px;color:#fff;font-size:30px;border-radius:8px;}
-.final-result .result-box h2{padding:0px;margin:0px;}
-.final-result .result-box p{padding:0px;margin:0px;}
 .modal-dialog .modal-footer{text-align:center}
 .odometer{font-size: 65px;}
 .popupP{text-align: center;font-size: 17px;width: 80%;margin: 0 auto;line-height: 25px;}
 .page{display: none;}
 #page1{display: block;}
+.main-wrapper{margin-top:10px;padding-bottom:90px;}
 .main-wrapper .form-group.food-container{background:#FF8E04;padding:6px 0 10px 6px}
 .main-wrapper .food-container label{color:#fff;}
 .main-wrapper .food-container #foodItem{width:80%}
@@ -40,11 +37,21 @@ h1.main-heading{ border-radius: 5px;color: #fff;font-size: 20px;margin-bottom: 2
 .header .navbar-nav{float:right;}
 .header .navbar-nav a{color:#fff;}
 .header .navbar-nav a:hover{background:#f4cc66;}
+.date-container{background:#FF8E04;padding:6px 0 10px 6px;font-size:20px;color:#fff;text-align:center;}
+.header .navbar{margin:0px;}
+.container-topmargin{margin-top:60px;}
+.nutrition .jumbotron{bottom: 0;left: 0;padding: 12px 8px 8px 8px;position: fixed;width: 100%;z-index: 4444;margin:0px;background:#FBD5B0}
+.nutrition .jumbotron h2{margin:0px;color:#000;font-size:16px;}
+.nutrition .jumbotron p{color:#777}
+.final-result p{font-size:30px;margin:0;padding:0;}
 @media only screen and (min-device-width : 320px) and (max-device-width : 768px) {
 .content-box h2{font-size:20px;}
 .calorie-count li{min-height:70px; min-width:40px;}
 .content-box .odometer{font-size:45px;}
 .suggestions-container{margin-top:20px;}
 .header .navbar-nav{float:none;}
-}
+.header{ margin-bottom: 45px; margin-top: 0; min-height: 40px; position: fixed; top: 0; width: 100%; z-index: 5000;}
+.topmargin{margin-top:51px;}
+.date-container{display: none;}
+.nutrition{display: none;}
 
