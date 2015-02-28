@@ -29,15 +29,16 @@ $(document).ready(function(){
 	});
 
 	/* Adding food item */
+	var $table = $('#foodTable');
 	$("#foodItem").autocomplete({
         source: foodJson,
         minLength: 1,
         select: function(event, ui) {
-            //var $item = $('<li>');
-            //$item.text(ui.item.label);
-            //calorieRemaining = calorieRemaining - parseInt(ui.item.calorie);
-            //calorieConsumed = calorieConsumed + parseInt(ui.item.calorie);
-            //updateCalories();
+            var $tr = $('<tr>');
+            $tr.append($('<td>').html(ui.item.label));
+            $tr.append($('<td>').html(ui.item.calorie));
+            $tr.append($('<td>').html('1'));
+            $table.prepend($tr);
             userProfile.updateUserDetails(ui.item);
             userProfile.updateUI();
         },
