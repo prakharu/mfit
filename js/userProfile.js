@@ -82,5 +82,8 @@ var userProfile = new function(){
   this.updateUI = function(foodDetails){
     $('#remainingCalorie').html(this.userCalorieRemaining);
     $('#calorieConsumed').html(this.userCalorieConsumed);
+    $('#carbsPercentage').html(this.userCarbsIntakePercentage + '%');
+    $('#proteinPercentage').html(this.userProteinIntakePercentage + '%');
+    $('#fatPercentage').html(this.userFatIntakePercentage + '%');
   };
 };
