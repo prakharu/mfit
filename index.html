@@ -11,6 +11,8 @@
   <link rel="stylesheet" type="text/css" href="styles/css/jquery-ui.min.css">
   <link rel="stylesheet" type="text/css" href="styles/css/odometer-theme-car.css">
   <link href="styles/css/main.css" rel="stylesheet">
+	  	  <link type="text/css" rel="stylesheet" href="../src/css/graph.css">
+	<link type="text/css" rel="stylesheet" href="css/lines.css">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -19,7 +21,37 @@
     <![endif]-->
   </head>
   <body>
-  
+<div id="chart_container">
+	<div id="chart"></div>
+</div>
+
+<script>
+
+var ajaxGraph = new Rickshaw.Graph.Ajax( {
+
+	element: document.getElementById("chart"),
+	width: 400,
+	height: 200,
+	renderer: 'line',
+	dataURL: 'data/data.json',
+	onData: function(d) { d[0].data[0].y = 80; return d },
+	series: [
+		{
+			name: 'New York',
+			color: '#c05020',
+		}, {
+			name: 'London',
+			color: '#30c020',
+		}, {
+			name: 'Tokyo',
+			color: '#6060c0'
+		}
+	]
+} );
+
+</script>
+
+</script>
       <div class="header">       
         <header role="banner" id="top" class="navbar navbar-static-top bs-docs-nav">
 		  <div class="container">
@@ -60,7 +92,7 @@
 			  <div class="form-group gender-container">
 			    <label for="Gender" class="form-field">Gender</label>
 				<label class="radio-inline">
-				  <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="m"> Male
+				  <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="m" checked="checked"> Male
 				</label>
 				<label class="radio-inline">
 				  <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="f"> Female
@@ -259,7 +291,7 @@
 			</div>
 		  </div>		  
 		</div>
-		<p><a class="btn btn-primary btn-lg btn-block" href="#" role="button">Add Food &raquo;</a></p>
+		
     
 			<div class="form-group food-container">
 				<label for="Age" class="form-field">Add Your Food </label>
@@ -353,12 +385,16 @@
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+	
+
+	<script src="vendor/d3.v3.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.js"></script>
     <script type="text/javascript" src="js/jquery-ui.min.js"></script>
     <script type="text/javascript" src="js/odometer.js"></script>
     <script type="text/javascript" src="js/userProfile.js"></script>
     <script type="text/javascript" src="js/data.js"></script>
+	  	  
     <script type="text/javascript" src="js/main.js"></script>
   </body>
 </html>
