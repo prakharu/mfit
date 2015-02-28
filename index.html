@@ -30,7 +30,7 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			  </button>
-			  <a class="navbar-brand" href="../">mFit</a>
+			  <a class="navbar-brand" href="../">mFit - You Earn Your Body</a>
 			</div>
 			<nav class="navbar-collapse bs-navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
 			  <ul class="nav navbar-nav">
@@ -246,18 +246,15 @@
       </table>     
     </div>
 	</div>
-	<footer>
-        <p>&copy; Copyright 2015, Sapient Corporation. All rights reserved</p>
-    </footer>	
 </div>
 	<div id="page3" class="page">
 		<iframe src="ajax.html" border = "0" width="100%" height="300" frameborder="0"></iframe>
 
  	</div>
 	<div id="page4" class="page">
-		<h2 class="heading">Challenge a Friend</h2>
-		<div data-example-id="contextual-table" class="bs-example">
-			<table class="table">
+		<h2 class="heading challangeFriend">Challenge a Friend</h2>
+		<div data-example-id="contextual-table" class="bs-example challangeFriend">
+			<table class="table" id="friendList">
 			  <thead>
 				<tr>
 				  <th>Friend Name</th>
@@ -265,30 +262,25 @@
 				</tr>
 			  </thead>
 			  <tbody>
-				<tr class="active">
-				  <th scope="row">Ajay</th>
-				  <td>
-					<label><input type="checkbox"> Want to add as friend</label>
-				  </td>
-				  
-				</tr>
-				<tr>
-				  <th scope="row">Vijay</th>
-				  <td>
-					<label><input type="checkbox"> Want to add as friend</label>
-				  </td>
-				  
-				</tr>
-				<tr class="success">
-				  <th scope="row">Sanjay</th>
-				  <td>
-					<label><input type="checkbox"> Want to add as friend</label>
-				  </td>
-				 
-				</tr>        
+				
 			  </tbody>
-			</table>
+			</table>			
 		</div>	
+		<p class="challangeFriend"><button data-toggle="modal" id="Challenge" class="btn btn-primary btn-lg btn-block" type="button">Start Challenge &raquo;</button></p>
+		<h2 class="heading challenge-frnd">Leaderboard</h2>
+		<div data-example-id="contextual-table" class="bs-example">
+			<table class="table" id="leaderBoard">
+			  <thead>
+				<tr>
+				  <th>Name</th>
+				  <th>Points</th>				  
+				</tr>
+			  </thead>
+			  <tbody>
+				
+			  </tbody>
+			</table>			
+		</div>
 	</div>
 </div>
 
@@ -329,6 +321,7 @@
     <script type="text/javascript" src="js/odometer.js"></script>
     <script type="text/javascript" src="js/userProfile.js"></script>
     <script type="text/javascript" src="js/data.js"></script>
+    <script type="text/javascript" src="js/friendList.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
   </body>
 </html>
