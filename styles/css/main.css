@@ -52,5 +52,6 @@ h1.main-heading{ border-radius: 5px;color: #fff;font-size: 20px;margin-bottom: 2
 .header .navbar-nav{float:none;}
 .header{ margin-bottom: 45px; margin-top: 0; min-height: 40px; position: fixed; top: 0; width: 100%; z-index: 5000;}
 .topmargin{margin-top:51px;}
-}
+.date-container{display: none;}
+.nutrition{display: none;}
 
