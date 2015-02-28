@@ -13,33 +13,32 @@ body{font-family: "Myriad Pro", Verdana, Calibri, sans-serif;color:#777}
 .main-wrapper .btn-primary{background-color:#f4cc66;border:solid 1px #f4cc66;color:#000;font-size:22px;}
 .calorie-count{padding:0px;margin:20px 0 0 0;}
 .calorie-count li{border-radius:8px;background:#262626;padding:10px;min-width:70px;min-height:70px;text-align:center;color:#fff;font-size:30px;margin-right:10px;list-style:none;float:left;}
-.suggestions-container h2{margin-top:0px;}
-.main-wrapper .form-group{margin-bottom:30px;}
-.main-wrapper .form-field{font-size:20px;font-weight:normal;padding:7px; background:#F3F2F2;display:block;margin-bottom:11px;border-radius: 7px;}
+.suggestions-container h2{margin-top:0px;color:#FABC1F;}
+.main-wrapper .form-group{margin-bottom:20px;background:#F3F2F2;border-radius: 7px;padding-top: 3px;}
+.main-wrapper .form-field{font-size:20px;font-weight:normal;padding:7px; display:inline-block;}
+.main-wrapper .form-control{display:inline-block;margin-left:10px;width:75%;}
+.main-wrapper select.form-control{width:64%;}
+.main-wrapper .height-container select.form-control{width:30%;}
 .height-container select.form-control{margin-bottom:10px;}
 footer{margin-top:50px; text-align:center;}
-h1.main-heading{ margin-bottom: 20px;font-size:30px;margin-top:10px;color:#00008B;	text-shadow: 5px 5px 5px #ccc;}
-.final-result{margin-top:30px}
-.final-result .result-box{background:#910000;padding:20px;color:#fff;font-size:30px;border-radius:8px;}
+h1.main-heading{ background:#000A9A;border-radius: 5px;color: #fff;font-size: 30px;margin-bottom: 20px;margin-top: 10px;padding: 10px 10px 13px 10px;}
+.final-result{margin-top:10px}
+.final-result .result-box{background:#910000;padding:10px 20px;color:#fff;font-size:30px;border-radius:8px;}
+.final-result .result-box h2{padding:0px;margin:0px;}
+.final-result .result-box p{padding:0px;margin:0px;}
 .modal-dialog .modal-footer{text-align:center}
+.odometer{font-size: 65px;}
+.popupP{text-align: center;font-size: 17px;width: 80%;margin: 0 auto;line-height: 25px;}
+.page{display: none;}
+#page1{display: block;}
+.main-wrapper .form-group.food-container{background:#FF8E04;padding:6px 0 10px 6px}
+.main-wrapper .food-container label{color:#fff;}
+.main-wrapper .food-container #foodItem{width:80%}
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 .content-box h2{font-size:20px;}
 .calorie-count li{min-height:70px; min-width:40px;}
 .content-box .odometer{font-size:45px;}
-.suggestions-container{margin-top:50px;}
-}
-.odometer{font-size: 65px;}
-.container {
-
-
-	
+.suggestions-container{margin-top:20px;}
 }
 
-.popupP{text-align: center;
-font-size: 17px;
-width: 80%;
-margin: 0 auto;
-line-height: 25px;}
-.page{display: none;}
-#page1{display: block;}
