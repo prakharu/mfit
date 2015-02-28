@@ -25,6 +25,7 @@ $(document).ready(function(){
 		$('#page2').show();
 		$("html, body").animate({scrollTop:0}, '500', 'swing', function() {
 		});
+		userProfile.updateUI();
 	});
 
 	/* Adding food item */
@@ -38,6 +39,7 @@ $(document).ready(function(){
             //calorieConsumed = calorieConsumed + parseInt(ui.item.calorie);
             //updateCalories();
             userProfile.updateUserDetails(ui.item);
+            userProfile.updateUI();
         },
         open: function(event, ui) {
             

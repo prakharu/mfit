@@ -12,6 +12,13 @@ var userProfile = new function(){
   this.userWeightLossIndex = 1;
   this.userWeightCategory = '';
   this.userWeightLossGain = '';
+  this.userProteinIntake = 0;
+  this.userCarbsIntake = 0;
+  this.userFatIntake = 0;
+  this.userTotalIntake = 0;
+  this.userProteinIntakePercentage = 0;
+  this.userCarbsIntakePercentage = 0;
+  this.userFatIntakePercentage = 0;
   this.initializeUserProfile = function(gender, age, height, weight, activityLevel){
     this.userAge = age;
     this.userHeight = height;
@@ -63,7 +70,17 @@ var userProfile = new function(){
   this.updateUserDetails = function(foodDetails){
     this.userCalorieRemaining = this.userCalorieRemaining - parseInt(foodDetails.calorie);
     this.userCalorieConsumed = this.userCalorieConsumed + parseInt(foodDetails.calorie);
-    console.log(this.userCalorieRemaining);
-    console.log(this.userCalorieConsumed);
+    this.userProteinIntake = this.userProteinIntake + parseInt(foodDetails.protein);
+    this.userCarbsIntake = this.userCarbsIntake + parseInt(foodDetails.carbohydrate);
+    this.userFatIntake = this.userFatIntake + parseInt(foodDetails.fat);
+    this.userTotalIntake = this.userProteinIntake + this.userCarbsIntake + this.userFatIntake;
+    this.userProteinIntakePercentage = Math.round(this.userProteinIntake*100/this.userTotalIntake);
+    this.userCarbsIntakePercentage = Math.round(this.userCarbsIntake*100/this.userTotalIntake);
+    this.userFatIntakePercentage = Math.round(this.userFatIntake*100/this.userTotalIntake);
+    console.log(userProfile);
+  };
+  this.updateUI = function(foodDetails){
+    $('#remainingCalorie').html(this.userCalorieRemaining);
+    $('#calorieConsumed').html(this.userCalorieConsumed);
   };
 };
