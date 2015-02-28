@@ -44,7 +44,7 @@ h1.main-heading{ border-radius: 5px;color: #fff;font-size: 20px;margin-bottom: 2
 .nutrition .jumbotron h2{margin:0px;color:#000;font-size:16px;}
 .nutrition .jumbotron p{color:#777}
 .final-result p{font-size:30px;margin:0;padding:0;}
-h2.heading{background:#ff8e04; padding: 6px 0 10px 6px;color:#fff;border-radius:8px;}
+h2.heading{background:#ff8e04; padding: 6px 0 10px 6px;color:#fff;border-radius:8px;font-size: 24px;}
 #page4 .table th{font-size:16px;}
 #page4 .bs-example{padding-top:5px;}
 footer p{font-size:11px;}
