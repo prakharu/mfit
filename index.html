@@ -219,13 +219,7 @@
 						<li>4</li>-->
 					</div>
 				</div>
-				<div class="col-xs-12 col-lg-4 suggestions-container">
-					<h2>suggestions:</h2>
-					<p>1 boul sprouts
-					one Apple Gtroade
-					Protien shak
-					etc.</p>
-				</div>
+				
 			</div>
 		  </div>		  
 		</div>
@@ -258,9 +252,9 @@
 
  	</div>
 	<div id="page4" class="page">
-		<h2 class="heading">Challenge a Friend</h2>
-		<div data-example-id="contextual-table" class="bs-example">
-			<table class="table">
+		<h2 class="heading challangeFriend">Challenge a Friend</h2>
+		<div data-example-id="contextual-table" class="bs-example challangeFriend">
+			<table class="table" id="friendList">
 			  <thead>
 				<tr>
 				  <th>Friend Name</th>
@@ -272,10 +266,10 @@
 			  </tbody>
 			</table>			
 		</div>	
-		<p><button data-toggle="modal" id="Challenge" class="btn btn-primary btn-lg btn-block" type="button">Start Challenge &raquo;</button></p>
+		<p class="challangeFriend"><button data-toggle="modal" id="Challenge" class="btn btn-primary btn-lg btn-block" type="button">Start Challenge &raquo;</button></p>
 		<h2 class="heading challenge-frnd">Leaderboard</h2>
 		<div data-example-id="contextual-table" class="bs-example">
-			<table class="table">
+			<table class="table" id="leaderBoard">
 			  <thead>
 				<tr>
 				  <th>Name</th>
@@ -283,27 +277,7 @@
 				</tr>
 			  </thead>
 			  <tbody>
-				<tr class="active">
-				  <th scope="row">Ajay</th>
-				  <td>
-					2000
-				  </td>
-				  
-				</tr>
-				<tr>
-				  <th scope="row">Vijay</th>
-				  <td>
-					3000
-				  </td>
-				  
-				</tr>
-				<tr class="active">
-				  <th scope="row">Sanjay</th>
-				  <td>
-					4000
-				  </td>
-				 
-				</tr>        
+				
 			  </tbody>
 			</table>			
 		</div>
