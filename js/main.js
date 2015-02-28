@@ -88,7 +88,7 @@ $(document).ready(function(){
     });
 
     /* Adding friends in List */
-    var $friendsTable = $('.bs-example table');
+    var $friendsTable = $('#friendList');
     for(var i=0; i<friendJson.length; i++){
     	var $tr = $('<tr>');
     	$tr.append($('<td>').html(friendJson[i].name));
@@ -96,4 +96,28 @@ $(document).ready(function(){
     	$friendsTable.append($tr);
     }
 
+    /* Leadboard setting */
+    var $leaderBoard = $('#leaderBoard');
+    $('#Challenge').on('click', function(){
+    	$('.challangeFriend').hide();
+    	var sortedArray = friendJson.sort(sortObj);
+    	for(var i=0; i<5; i++){
+    		if(i%2 === 0){
+    			var $tr = $('<tr class="active">');
+    		}
+    		else{
+    			var $tr = $('<tr>');
+    		}
+    		$tr.append($('<td>').html(sortedArray[i].name));
+    		$tr.append($('<td>').html(sortedArray[i].points));
+    		$leaderBoard.append($tr);
+    	}
+
+    });
+
+    
 });
+
+function sortObj(a, b){
+	return (b.points-a.points);
+}
