@@ -6,7 +6,7 @@ foodJson.push({'label':'Milk','value':'Milk','calorie':'122','protein':'8','carb
 foodJson.push({'label':'Tea','value':'Tea','calorie':'17','protein':'0.8','carbohydrate':'1.6','fat':'0.8'});
 foodJson.push({'label':'Banana','value':'Banana','calorie':'121','protein':'1','carbohydrate':'31','fat':'0'});
 foodJson.push({'label':'Chicken','value':'Chicken','calorie':'147','protein':'16','carbohydrate':'0','fat':'8'});
-foodJson.push({'label':'Egg','value':'Egg','calorie':'74','protein':'6','carbohydrate':'.4','fat':'5'});
+foodJson.push({'label':'Egg','value':'Egg','calorie':'74','protein':'6','carbohydrate':'0.4','fat':'5'});
 foodJson.push({'label':'Fish','value':'Fish','calorie':'127','protein':'26','carbohydrate':'0','fat':'1'});
 foodJson.push({'label':'Mutter Paneer','value':'Mutter Paneer','calorie':'200','protein':'7','carbohydrate':'8','fat':'15'});
 foodJson.push({'label':'Samosa','value':'Samosa','calorie':'190','protein':'4','carbohydrate':'21','fat':'10'});
