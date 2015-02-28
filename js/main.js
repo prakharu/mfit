@@ -1,4 +1,26 @@
 $(document).ready(function(){
+	/* Initial UI setup */
+	$('.main-wrapper').addClass('container-topmargin');
+	$('.navbar-nav a').on('click', function(){
+		var selectedLink = $(this).attr('id');
+		$('.page').hide();
+		if(selectedLink === 'menu1'){
+			$('#page2').show();
+			$('.date-container').show();
+			$('.nutrition').show();
+			$('.main-wrapper').removeClass('container-topmargin');
+		}else if(selectedLink === 'menu2'){
+			$('#page3').show();
+			$('.date-container').hide();
+			$('.nutrition').hide();
+			$('.main-wrapper').addClass('container-topmargin');
+		}else if(selectedLink === 'menu3'){
+			$('#page4').show();
+			$('.date-container').hide();
+			$('.nutrition').hide();
+			$('.main-wrapper').addClass('container-topmargin');
+		}
+	});
 
 	/* Form submit action */
 	$('#calcBMI').on('click', function(){
@@ -23,6 +45,9 @@ $(document).ready(function(){
 		$('#userResult').modal('hide');
 		$('.page').hide();
 		$('#page2').show();
+		$('.date-container').show();
+		$('.nutrition').show();
+		$('.main-wrapper').removeClass('container-topmargin');
 		$("html, body").animate({scrollTop:0}, '500', 'swing', function() {
 		});
 		userProfile.updateUI();
