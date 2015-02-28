@@ -45,6 +45,7 @@ h1.main-heading{ border-radius: 5px;color: #fff;font-size: 20px;margin-bottom: 2
 .nutrition .jumbotron p{color:#777}
 .final-result p{font-size:30px;margin:0;padding:0;}
 @media only screen and (min-device-width : 320px) and (max-device-width : 768px) {
+.modal{margin-top:50px}
 .content-box h2{font-size:20px;}
 .calorie-count li{min-height:70px; min-width:40px;}
 .content-box .odometer{font-size:45px;}
