@@ -86,4 +86,14 @@ $(document).ready(function(){
             }
         }
     });
+
+    /* Adding friends in List */
+    var $friendsTable = $('.bs-example table');
+    for(var i=0; i<friendJson.length; i++){
+    	var $tr = $('<tr>');
+    	$tr.append($('<td>').html(friendJson[i].name));
+    	$tr.append($('<td>').html('<label><input type="checkbox"> Want to add as friend</label>'));
+    	$friendsTable.append($tr);
+    }
+
 });
