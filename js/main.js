@@ -1,9 +1,15 @@
 $(document).ready(function(){
 	/* Initial UI setup */
+	$('.navbar-header button').css('visibility','hidden');
 	$('.main-wrapper').addClass('container-topmargin');
+	$('.nav a').on('click', function(){
+    	$(".btn-navbar").click(); //bootstrap 2.x
+    	$(".navbar-toggle").click() //bootstrap 3.x by Richard
+	});
 	$('.navbar-nav a').on('click', function(){
 		var selectedLink = $(this).attr('id');
 		$('.page').hide();
+		$('.navbar-header button').css('visibility','visible');
 		if(selectedLink === 'menu1'){
 			$('#page2').show();
 			$('.date-container').show();
