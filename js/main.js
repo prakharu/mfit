@@ -51,6 +51,7 @@ $(document).ready(function(){
 		$('#userResult').modal('hide');
 		$('.page').hide();
 		$('#page2').show();
+		$('.navbar-header button').css('visibility','visible');
 		$('.date-container').show();
 		$('.nutrition').show();
 		$('.main-wrapper').removeClass('container-topmargin');
