@@ -41,3 +41,5 @@ font-size: 17px;
 width: 80%;
 margin: 0 auto;
 line-height: 25px;}
+.page{display: none;}
+#page1{display: block;}

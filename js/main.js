@@ -8,8 +8,14 @@ $(document).ready(function(){
 		var height = parseInt($('#heightFeet').val())*12 + parseInt($('#heightInches').val());
 		var activityLevel = $('#activity').val();
 		userProfile.initializeUserProfile(genderValue, age, height, weight, activityLevel);
-		var userMessage = 'Your calorie requirement to sustain your current weight is ' + userProfile.userCalorieRequirement + ' and your BMI is ' + userProfile.userBMI + '. According to your BMI you are ' + userProfile.userWeightCategory + ' and your revised calorie target for ' + userProfile.userWeightLossGain +' should be ' + userProfile.userRevisedCalorieRequirement;
+		var userMessage = 'Your calorie requirement to sustain your current weight is <b>' + userProfile.userCalorieRequirement + '</b> and your <b>BMI</b> is ' + userProfile.userBMI + '. According to your BMI you are <b>' + userProfile.userWeightCategory + '</b> and your revised calorie target for <b>' + userProfile.userWeightLossGain +'</b> should be <b>' + userProfile.userRevisedCalorieRequirement+'</b>';
 		$('#userResult .modal-body p').html(userMessage);
+		if(isNaN(userProfile.userCalorieRequirement) || isNaN(userProfile.userBMI) || isNaN(userProfile.userRevisedCalorieRequirement)){
+			alert('Error. Please fill the form correctly!');
+		}
+		else{
+			$('#userResult').modal('show');
+		}
 	});
 
 	/* On click of proceed on popup */
@@ -20,12 +26,6 @@ $(document).ready(function(){
 		$("html, body").animate({scrollTop:0}, '500', 'swing', function() {
 		});
 	});
-
-	var foodJson = new Array();
-	foodJson.push({'label':'Chapati','value':'Chapati','calorie':'50'});
-	foodJson.push({'label':'Dal','value':'Dal','calorie':'100'});
-	foodJson.push({'label':'Rice','value':'Rice','calorie':'100'});
-	foodJson.push({'label':'Parantha','value':'Parantha','calorie':'100'});
 
 	/* Adding food item */
 	$("#foodItem").autocomplete({
